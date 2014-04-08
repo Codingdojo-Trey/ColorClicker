@@ -23,12 +23,12 @@
 				alert('you clicked the big box!')  //comment this out when you figure out what event.stopPropagation is used for!
 			})
 
-			$('.side_box').click(function(){
+			$('.side_box').click(function(event){
 				event.stopPropagation();
 				$(this).siblings().css('background-color', random_color());
 			})
 
-			$('.middle_box').click(function(){
+			$('.middle_box').click(function(event){
 				event.stopPropagation();
 				$(this).parent().css('background-color', random_color);
 			})
